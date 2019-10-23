@@ -5,35 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="asset/css/style.css">
     <title>Crystals Collector</title>
 
 
 </head>
 
-<h1>Crystal Collector</h1>
+<h1>Crystal Collector!</h1>
 
-<p>You will be given a random number at the start of the game.
-    There are 4 crsytals below. By clicking
-    on a crystal you will add a specific amount of points
-    to your total score.</p>
+<p>You will be given a random number at the start of the
+game.
 
-<p>You win the game by matching your total score to random number,
-    you lose the game if yout total score goes above the random number.
-    The value of each crystal is hidden from you until you click on it.
-    Each time when the game starts, the game will change the value of each crystal.
+There are 4 crsytals below. By clicking on a crystal you 
+will add a specific amount of points to your total score.
+
+You win the game by matching your total score to random 
+number,you lose the game if yout total score goes above
+ the random number.
+
+The value of each crystal is hidden from you until you 
+click on it.
+
+ Each time when the game starts, the game will change the
+ value of each crystal.
 </p>
 
 <body>
 
 
-    <div id="wins-losses">
-        <p>Wins: <span id="wins"></span></p>
+    <div class="wins-losses"></div>
 
-        <p>Losses: <span id="losses"></span></p>
-    </div>
+    <div class="NumbertoMatch"></div>
 
-    <div id="crystal-container">
+    <div class="scorebox"> Wins:
+        Losses: </div>
+
+    <div class="container">
         <div class="crystal">
             <img src="asset\images\crystal1.jpg" alt="Crystal1" class="crystal-image " id="crystal1" />
         </div>
@@ -55,10 +62,10 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="./assets/javascript/game.js"></script>
+    <script src="asset/javascript/game.js"> </script>
 
-  
-    
+
+
 
 </body>
 
