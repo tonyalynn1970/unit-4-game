@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystals Colletor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Crystals Collector</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
+
+<h1>Crystal Collector</h1>
+
+<p>You will be given a random number at the start of the game.
+    There are 4 crsytals below. By clicking
+    on a crystal you will add a specific amount of points
+    to your total score.</p>
+
+<p>You win the game by matching your total score to random number,
+    you lose the game if yout total score goes above the random number.
+    The value of each crystal is hidden from you until you click on it.
+    Each time when the game starts, the game will change the value of each crystal.
+</p>
+
 <body>
+
+
+    <div id="wins-losses">
+        <p>Wins: <span id="wins"></span></p>
+
+        <p>Losses: <span id="losses"></span></p>
+    </div>
+
+    <div id="crystal-container">
+        <div class="crystal">
+            <img src="asset\images\crystal1.jpg" alt="Crystal1" class="crystal-image " id="crystal1" />
+        </div>
+        <div class="crystal">
+            <img src="asset\images\crystal2.jpg" alt="Crystal2" class="crystal-image" id="crystal2" />
+        </div>
+        <div class="crystal">
+            <img src="asset\images\crystal3.jpg" alt="Crystal3" class="crystal-image" id="crystal3" />
+        </div>
+        <div class="crystal">
+            <img src="asset\images\crystal4.jpg" alt="Crystal4" class="crystal-image" id="crystal4" />
+        </div>
+    </div>
+    <div id="score-container">
+        <div id="total-header">Your total score is: </div>
+        <div id="total-score"><span id="counter-total"></span></div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+
+  
     
+
 </body>
+
 </html>
